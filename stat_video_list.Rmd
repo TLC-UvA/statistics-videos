@@ -5,6 +5,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library("DT")
 ```
 
 ```{r}
@@ -12,7 +13,6 @@ if(!'gsheet' %in% installed.packages()) { install.packages('gsheet') }
 library("gsheet")
 data <- gsheet2tbl('docs.google.com/file/d/1905spNMdKN6jCCqEn7LlYs2CeEAldZdG/view?usp=sharing')
 
-
-data
+datatable(data)
 ```
 
