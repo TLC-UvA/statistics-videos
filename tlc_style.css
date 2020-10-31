@@ -27,3 +27,7 @@ color: #BC0031;
 stat_video_list.html:23:305803a {
 color: #BC0031;
 }
+
+td {
+  vertical-align: top;
+}
