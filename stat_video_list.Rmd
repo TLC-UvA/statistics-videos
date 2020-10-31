@@ -3,13 +3,16 @@ title: "Statistics videos"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+The table below gives an overview or statistics knowledge clips created at the University of Amsterdam. In an effort to organise and make the videos more excessable, this overview provides links to all videos, complemented with a summary and keywords.
+
+```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library("DT")
 ```
 
+> Use the search field to find a video on your topic of interest.
 
-```{r}
+```{r, echo=FALSE}
 results <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv")
 
 results$title_link <- paste0('<a href="', 
@@ -18,10 +21,20 @@ results$title_link <- paste0('<a href="',
                              results$Title,
                              '</a>')
 
-names(results)
+# names(results)
 
-selected.column <- results[,c("title_link", "English.keywords")]
+selected.column <- results[,c("title_link", "Summary", "English.keywords")]
 
-datatable(selected.column, escape = FALSE)
+datatable(selected.column, 
+          escape  = FALSE,
+          options = list(autoWidth  = TRUE),
+          colnames = c('YouTube', "Summary", "Keywords")
+          )
 ```
 
+This content was created as a grassroots project at the University of Amsterdam by:
+
+* Dr. Julia Bader
+* Mayte Beekman (student assistent)
+
+With support from the Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences.
