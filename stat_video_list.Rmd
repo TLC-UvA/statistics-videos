@@ -12,6 +12,12 @@ library("DT")
 ```{r}
 results <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv")
 
+results$title_link <- paste0('<a href="', 
+                             results$Youtube.link,
+                             '" target="_blank">',
+                             results$Title,
+                             '</a>')
+
 datatable(results)
 ```
 
