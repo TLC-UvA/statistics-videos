@@ -8,11 +8,10 @@ knitr::opts_chunk$set(echo = TRUE)
 library("DT")
 ```
 
-```{r}
-if(!'gsheet' %in% installed.packages()) { install.packages('gsheet') }
-library("gsheet")
-data <- gsheet2tbl('docs.google.com/file/d/1905spNMdKN6jCCqEn7LlYs2CeEAldZdG/view?usp=sharing')
 
-datatable(data)
+```{r}
+results <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv")
+
+datatable(results)
 ```
 
