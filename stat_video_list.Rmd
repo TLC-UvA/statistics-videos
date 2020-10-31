@@ -18,6 +18,10 @@ results$title_link <- paste0('<a href="',
                              results$Title,
                              '</a>')
 
-datatable(results)
+names(results)
+
+selected.column <- results[,c("title_link", "English.keywords")]
+
+datatable(selected.column, escape = FALSE)
 ```
 
