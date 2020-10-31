@@ -1,0 +1,11 @@
+name: "Statistics Videos"
+output_dir: "."
+navbar:
+  title: "TLC-FMG"
+  right:
+    - icon: fa-github-alt # fa-github 
+      href: https://github.com/TLC-UvA/statistics-videos
+output:
+  html_document:
+    theme: cerulean  # "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti"
+    css: tlc_style.css

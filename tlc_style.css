@@ -1,0 +1,29 @@
+.navbar {
+background-image: -webkit-linear-gradient(#BC0031, #BC0031 60%, #BC0031);
+background-image: -o-linear-gradient(#BC0031, #BC0031 60%, #BC0031);
+background-image: -webkit-gradient(linear, left top, left bottom, from(#BC0031), color-stop(60%, #BC0031), to(#BC0031));
+background-image: linear-gradient(#BC0031, #BC0031 60%, #BC0031);
+background-repeat: no-repeat;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffBC0031', endColorstr='#ffBC0031', GradientType=0);
+border-bottom: 1px solid #178acc;
+-webkit-filter: none;
+filter: none;
+-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+stat_video_list.html:23:363808.navbar-default {
+background-color: #BC0031;
+border-color: #1995dc;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #BC0031;
+}
+
+a, a:hover, a:focus {
+color: #BC0031;
+}
+
+stat_video_list.html:23:305803a {
+color: #BC0031;
+}

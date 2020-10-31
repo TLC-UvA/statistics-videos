@@ -1,9 +1,16 @@
 ---
-title: "Statistics videos"
+title: "Statistics Videos"
 output: html_document
 ---
 
 The table below gives an overview or statistics knowledge clips created at the University of Amsterdam. In an effort to organise and make the videos more excessable, this overview provides links to all videos, complemented with a summary and keywords.
+
+This content was created as a grassroots project at the University of Amsterdam by:
+
+* [Dr. Julia Bader](https://www.uva.nl/profiel/b/a/j.bader2/j.bader2.html)
+* Mayte Beekman (student assistent)
+
+With support from the [Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences](http://tlc.uva.nl/en/article-faculty/fmg-en/).
 
 ```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -32,9 +39,3 @@ datatable(selected.column,
           )
 ```
 
-This content was created as a grassroots project at the University of Amsterdam by:
-
-* [Dr. Julia Bader](https://www.uva.nl/profiel/b/a/j.bader2/j.bader2.html)
-* Mayte Beekman (student assistent)
-
-With support from the [Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences](http://tlc.uva.nl/en/article-faculty/fmg-en/).
