@@ -33,9 +33,11 @@ results$title_link <- paste0('<a href="',
 selected.column <- results[,c("title_link", "Summary", "English.keywords")]
 
 datatable(selected.column, 
-          escape  = FALSE,
-          options = list(autoWidth  = TRUE),
-          colnames = c('YouTube', "Summary", "Keywords")
+          escape     = FALSE,
+          options    = list(autoWidth  = TRUE),
+          colnames   = c('YouTube', "Summary", "Keywords"),
+          extensions = 'Responsive',
+          rownames   = FALSE
           )
 ```
 
