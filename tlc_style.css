@@ -31,3 +31,9 @@ color: #BC0031;
 td {
   vertical-align: top;
 }
+
+.dataTables_wrapper .dataTables_filter {
+float: none;
+text-align: center;
+height: 50px;
+}
