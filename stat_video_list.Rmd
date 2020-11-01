@@ -26,6 +26,8 @@ results$title_link <- paste0('<a href="',
                              results$Youtube.link,
                              '" target="_blank">',
                              results$Title,
+                             "<br> Duration: ",
+                             results$Duration,
                              '</a>')
 
 # names(results)
@@ -36,7 +38,9 @@ datatable(selected.column,
           escape     = FALSE,
           options    = list(autoWidth  = TRUE,
                             dom        = 'Bfrtip',
-                            pageLength = 5),
+                            pageLength = 5,
+                            columnDefs = list(list(visible = FALSE, 
+                                                   targets = c(2,3)))),
           colnames   = c('Video link', "Summary", "Keywords EN", "Keywords NL"),
           extensions = 'Responsive',
           rownames   = FALSE
