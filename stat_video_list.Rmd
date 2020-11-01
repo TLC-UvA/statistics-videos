@@ -38,7 +38,7 @@ datatable(selected.column,
                             dom        = 'Bfrtip',
                             pageLength = 5,
                             columnDefs = list(list(visible = FALSE, targets = c(3,4)),
-                                              list(width   = '250px', targets = c(0)))
+                                              list(width   = '200px', targets = c(0)))
                             ),
           colnames   = c('Video link', "Time", "Summary", "Keywords EN", "Keywords NL"),
           extensions = 'Responsive',
