@@ -36,11 +36,12 @@ selected.column <- results[,c("title_link", "Summary", "English.keywords", "Dutc
 
 datatable(selected.column, 
           escape     = FALSE,
-          options    = list(autoWidth  = TRUE,
+          options    = list(autoWidth  = FALSE,
                             dom        = 'Bfrtip',
                             pageLength = 5,
-                            columnDefs = list(list(visible = FALSE, 
-                                                   targets = c(2,3)))),
+                            columnDefs = list(list(visible = FALSE, targets = c(2,3)),
+                                              list(width   = '200px', targets = c(0)))
+                            ),
           colnames   = c('Video link', "Summary", "Keywords EN", "Keywords NL"),
           extensions = 'Responsive',
           rownames   = FALSE
