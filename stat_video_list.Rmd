@@ -46,3 +46,4 @@ datatable(selected.column,
           )
 ```
 
+These videos originate from the following UvA YouTube channels: [Onderzoeksmethoden UvA](https://www.youtube.com/channel/UC3RJrU7HbOdqWX2eHNZ8i7A), [Research Methods & Statistics](https://www.youtube.com/channel/UCcjogDXLLQCMtpGvQTNZrOg), [Scientific & Statistical Reasoning](https://www.youtube.com/channel/UCt9z-wt6x8TbgJWCCSges8w). The [complete list](https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv) is maintained in a google spreadsheet by <a href="mailto:tlc-fmg@uva.nl">TLC-FMG</a>
