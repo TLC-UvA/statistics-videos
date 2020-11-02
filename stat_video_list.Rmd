@@ -7,8 +7,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library("DT")
 
-devtools::install_github("JohnCoene/flagr")
-library("flagr")
+# devtools::install_github("JohnCoene/flagr")
+# library("flagr")
 ```
 
 The table below gives an overview or statistics knowledge clips created at the University of Amsterdam. In an effort to organise and make the videos more excessable, this overview provides links to all videos, complemented with a summary and keywords.
