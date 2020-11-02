@@ -3,6 +3,14 @@ title: "Statistics Videos"
 output: html_document
 ---
 
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("DT")
+
+devtools::install_github("JohnCoene/flagr")
+library("flagr")
+```
+
 The table below gives an overview or statistics knowledge clips created at the University of Amsterdam. In an effort to organise and make the videos more excessable, this overview provides links to all videos, complemented with a summary and keywords.
 
 This content was created as a grassroots project at the University of Amsterdam by:
@@ -12,12 +20,7 @@ This content was created as a grassroots project at the University of Amsterdam 
 
 With support from the [Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences](http://tlc.uva.nl/en/article-faculty/fmg-en/).
 
-```{r setup, include=FALSE, echo=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library("DT")
-```
-
-> Use the **Search** field to find a video on your topic of interest.
+> Use the **Search** field to find a video on your topic of interest. 
 
 ```{r, echo=FALSE}
 results <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv")
@@ -30,17 +33,19 @@ results$title_link <- paste0('<a href="',
 
 # names(results)
 
-selected.column <- results[,c("title_link","Duration", "Summary", "English.keywords", "Dutch.keywords")]
+selected.column <- results[,c("title_link","Duration", "Language", "Summary", "English.keywords", "Dutch.keywords")]
+
+# selected.column$Language = '<span id="htmlwidget-65747d640762627bfb0a" class="flag-icon flagr html-widget html-widget-static-bound flag-icon-uk"></span>'
 
 datatable(selected.column, 
           escape     = FALSE,
           options    = list(autoWidth  = FALSE,
                             dom        = 'Bfrtip',
                             pageLength = 5,
-                            columnDefs = list(list(visible = FALSE, targets = c(3,4)),
+                            columnDefs = list(list(visible = FALSE, targets = c(4,5)),
                                               list(width   = '200px', targets = c(0)))
                             ),
-          colnames   = c('Video link', "Time", "Summary", "Keywords EN", "Keywords NL"),
+          colnames   = c('Video link', "Time","Lang.", "Summary", "Keywords EN", "Keywords NL"),
           extensions = 'Responsive',
           rownames   = FALSE
           )
