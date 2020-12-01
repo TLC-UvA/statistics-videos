@@ -13,12 +13,7 @@ library("DT")
 
 The table below gives an overview or statistics knowledge clips created at the University of Amsterdam. In an effort to organise and make the videos more excessable, this overview provides links to all videos, complemented with a summary and keywords.
 
-This content was created as a grassroots project at the University of Amsterdam by:
-
-* [Dr. Julia Bader](https://www.uva.nl/profiel/b/a/j.bader2/j.bader2.html)
-* [Mayte Beekman]( https://www.linkedin.com/in/mayte-beekman/) (student assistent)
-
-With support from the [Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences](http://tlc.uva.nl/en/article-faculty/fmg-en/).
+These videos originate from the following UvA YouTube channels: [Onderzoeksmethoden UvA](https://www.youtube.com/channel/UC3RJrU7HbOdqWX2eHNZ8i7A), [Research Methods & Statistics](https://www.youtube.com/channel/UCcjogDXLLQCMtpGvQTNZrOg), [Scientific & Statistical Reasoning](https://www.youtube.com/channel/UCt9z-wt6x8TbgJWCCSges8w). The [complete list](https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv) is maintained by <a href="mailto:tlc-fmg@uva.nl">TLC-FMG</a>. Feel free to contact the <a href="mailto:tlc-fmg@uva.nl">TLC-FMG</a> if you have any suggestions for improvement.
 
 > Use the **Search** field to find a video on your topic of interest. 
 
@@ -51,4 +46,11 @@ datatable(selected.column,
           )
 ```
 
-These videos originate from the following UvA YouTube channels: [Onderzoeksmethoden UvA](https://www.youtube.com/channel/UC3RJrU7HbOdqWX2eHNZ8i7A), [Research Methods & Statistics](https://www.youtube.com/channel/UCcjogDXLLQCMtpGvQTNZrOg), [Scientific & Statistical Reasoning](https://www.youtube.com/channel/UCt9z-wt6x8TbgJWCCSges8w). The [complete list](https://docs.google.com/spreadsheets/d/e/2PACX-1vSlE5LD2CN1cKgbrhBjAseRQfs-ic8nWzSjvDIHNYU4Eh9J56hsielJulXm9xdmsQ/pub?gid=353127445&single=true&output=csv) is maintained by <a href="mailto:tlc-fmg@uva.nl">TLC-FMG</a>. Feel free to contact the <a href="mailto:tlc-fmg@uva.nl">TLC-FMG</a> if you have any suggestions for improvement.
+This content was created as a grassroots project at the University of Amsterdam by:
+
+* [Dr. Julia Bader](https://www.uva.nl/profiel/b/a/j.bader2/j.bader2.html)
+* [Dr. Evelyn Ersanilli](https://www.uva.nl/profiel/e/r/e.f.ersanilli/e.f.ersanilli.html)
+* [Mayte Beekman]( https://www.linkedin.com/in/mayte-beekman/) (student assistent)
+
+
+With support from the [Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences](http://tlc.uva.nl/en/article-faculty/fmg-en/).
